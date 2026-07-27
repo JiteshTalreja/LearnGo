@@ -150,4 +150,8 @@ import "fmt"
 func main() {
 	var someText = "hello"
 	fmt.Println("%C\n", someText[0])
+
+	var name, age = "Kim", 31
+
+	fmt.Printf("%s is %d years old", name, age)
 }
