@@ -148,10 +148,16 @@ package main
 import "fmt"
 
 func main() {
-	var someText = "hello"
-	fmt.Println("%C\n", someText[0])
+	// var someText = "hello"
+	// fmt.Println("%C\n", someText[0])
 
 	var name, age = "Kim", 31
 
 	fmt.Printf("%s is %d years old", name, age)
+
+	fmt.Println("\n \t this is some text with emojies 😀🥸")
+
+	fmt.Println(`this is a some raw string
+                     spread out in multiple 
+                     linesssssssssssss`)
 }
