@@ -160,4 +160,7 @@ func main() {
 	fmt.Println(`this is a some raw string
                      spread out in multiple 
                      linesssssssssssss`)
+
+	something := "56"
+	fmt.Printf(something)
 }
