@@ -162,5 +162,11 @@ func main() {
                      linesssssssssssss`)
 
 	something := "56"
-	fmt.Printf(something)
+	fmt.Println(something)
+
+	a, b, c, d, e, f := 0, 1, 2, 3, 4, 5
+
+	fmt.Printf("%b, %b, %b, %b, %b, %b", a, b, c, d, e, f)
+
+	fmt.Printf("\n%x, %x, %x, %x, %x, %x", a, b, c, d, e, f)
 }
