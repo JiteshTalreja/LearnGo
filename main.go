@@ -169,4 +169,23 @@ func main() {
 	fmt.Printf("%b, %b, %b, %b, %b, %b", a, b, c, d, e, f)
 
 	fmt.Printf("\n%x, %x, %x, %x, %x, %x", a, b, c, d, e, f)
+
+	//lession CONVERSION
+
+	/*
+			var st string = "67"
+
+			var in int = 56
+
+			in = int(st)
+
+			fmt.Printf("%v of type %T", in, in)
+
+		        the above doesn't work since this is a direct datatype conversion between string and int and that's not possible as per Go.
+		        this can only work between int to float or float64 to int or int32 to int64
+	*/
+
+	var abc = [3]int{1, 2, 3}
+
+	fmt.Printf("\n, %v", abc)
 }
