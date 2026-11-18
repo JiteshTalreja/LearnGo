@@ -2,12 +2,15 @@ package main
 
 import "fmt"
 
-var card string
+var cards []string
 
 func main() {
 
-	card = newCard()
-	fmt.Println(card)
+	cards = append(cards, "ace of spades", newCard(), "queen of hearts")
+
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 func newCard() string {
