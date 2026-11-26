@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 /* Create a new dataype called deck
 deck will inherit propeties or will be based on Slice
@@ -33,4 +36,12 @@ func newDeck() deck {
 
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
+}
+
+func (d deck) shuffle() {
+
+}
+
+func (d deck) toString() string {
+	return strings.Join([]string(d), ",")
 }
